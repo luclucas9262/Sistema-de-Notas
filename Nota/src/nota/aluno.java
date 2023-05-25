@@ -11,6 +11,7 @@ public class aluno {
 
     public void SetNota1() {
         System.out.println("Digitie a nota n1 do aluno: ");
+        System.out.println("Sair Do Sistema Digite 999");
         this.n1 = entrada.nextDouble();
     }
 
@@ -21,6 +22,7 @@ public class aluno {
 
     public void SetNota2() {
         System.out.println("Digite a nota n2 do aluno: ");
+        System.out.println("Sair Do Sistema Digite 999");
         this.n2 = entrada.nextDouble();
     }
 
@@ -34,7 +36,7 @@ public class aluno {
     }
 
     public void NotasInvalidas() {
-        System.out.println("Notas Digitadas Invalidas");
+        System.out.println("___Notas Digitadas Invalidas___");
     }
     
     
@@ -49,5 +51,11 @@ public class aluno {
     public void Reprovado() {
         System.out.println("Aluno Reprovado"+" Sua Nota final é: "+total);
     }
+    
+    
+    public void Sair() {
+        System.out.println("Sistema Encerrado");
+        System.exit(0);
+        }
 
 }
